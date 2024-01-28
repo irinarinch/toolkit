@@ -53,3 +53,27 @@
   margin: 10px;
   cursor: pointer;
 }
+
+.header {
+  display: flex;
+}
+
+.form {
+  flex-grow: 1;
+}
+
+.favorites-btn {
+  border: 1px solid rgb(108, 117, 125);
+  border-radius: 5px;
+  height: 38px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(108, 117, 125);
+  margin-left: 5px;
+}
+
+.movie-title {  
+  padding: 15px;
+}

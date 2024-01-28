@@ -1,8 +1,13 @@
+import List from "../components/List";
+import { IFavoritesPageProps } from "../App";
 
-const FavoritesPage = () => {
+const FavoritesPage = ({ data }: IFavoritesPageProps) => {
   return (
-    <div>FavoritesPage</div>
-  )
-}
+    <>
+      <List data={data} />
+      {(data.length === 0) && <h1>Вы ничего не добавили в избранное</h1>}
+    </>
+  );
+};
 
-export default FavoritesPage
+export default FavoritesPage;
