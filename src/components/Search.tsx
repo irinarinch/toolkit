@@ -10,7 +10,7 @@ const Search = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let { value } = e.target;  
-    value = value.replace(/[^A-Za-z]/ig, '')
+    value = value.replace(/[^A-Za-z 0-9]/ig, '')
     setInputValue(value);
   };
 
