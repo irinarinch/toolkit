@@ -25,6 +25,7 @@ export const moviesSlice = createSlice({
       .addCase(fetchMovies.pending, (state) => {
         state.isLoading = true;
         state.error = null;
+        state.list = [];
       })
       .addCase(fetchMovies.fulfilled, (state, actions) => {
         state.isLoading = false;
