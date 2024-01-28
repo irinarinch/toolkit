@@ -24,7 +24,7 @@ interface IListProps {
 const List = ({ data }: IListProps) => {
   const nav = useNavigate();
   const { fetchMovieById } = useActions();
-  
+
   const onClick = (e: React.MouseEvent<HTMLElement, MouseEvent>, id: string) => {
     const target = e.target as HTMLElement;
     if (target.closest(".like-icon")) return;
@@ -39,6 +39,7 @@ const List = ({ data }: IListProps) => {
         <ListGroup
           key={item.imdbID}
           className="my-2"
+          style={{ cursor: "pointer", marginRight: "15px" }}
           onClick={(e) => onClick(e, item.imdbID)}
         >
           <Movie movie={item} />

@@ -21,11 +21,14 @@ function App() {
   const favorites = useFavorites();
 
   return (
-    <Routes>
-      <Route path="/" element={<HomePage data={data} />} />
-      <Route path="/:id" element={<InfoPage data={data} />} />
-      <Route path="/favorites" element={<FavoritesPage data={favorites} />} />
-    </Routes>
+    <>
+      <h1>Домашнее задание к занятию «Redux Toolkit»</h1>
+      <Routes>
+        <Route path="/" element={<HomePage data={data} />} />
+        <Route path="/:id" element={<InfoPage data={data} />} />
+        <Route path="/favorites" element={<FavoritesPage data={favorites} />} />
+      </Routes>
+    </>
   );
 }
 

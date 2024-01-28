@@ -6,7 +6,7 @@ import {store} from './store/store';
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/toolkit/">
       <App />
     </BrowserRouter>
   </Provider>
